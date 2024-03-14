@@ -69,7 +69,7 @@ export default function Shell() {
       },
     }).then((response) => response.json()).then((data) => {
       setPubKeys(data.pubKeys);
-      print(data)
+      // print(data)
       fetch("/api/get-images", {
         method: "GET",
         headers: {
